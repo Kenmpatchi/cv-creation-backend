@@ -1,5 +1,5 @@
 const mongoose=require('mongoose');
-const Cv = mongoose.model( 'Cv' , {
+const CvSchema=new mongoose.Schema({
     user_id:{
         type:Object
     },
@@ -53,4 +53,4 @@ const Cv = mongoose.model( 'Cv' , {
     }
 
 })
-module.exports = Cv;
+module.exports=mongoose.model('Cv',CvSchema)
